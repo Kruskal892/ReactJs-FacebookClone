@@ -1,0 +1,16 @@
+.sidebar{
+    flex: 2;
+    height: calc(100vh - 3.74rem);
+    /* background: #18191A; */
+    justify-content: center;
+}
+
+.sidebarWrapper{
+    padding: 20px;
+}
+.sidebarAvatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}

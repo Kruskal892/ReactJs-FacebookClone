@@ -1,0 +1,130 @@
+.topBarContainer {
+    height: 3.74rem;
+    display: flex;
+    background-color: #242526;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 0 10px;
+    overflow-x: hidden;
+}
+
+.topBarRight {
+    flex: 1;
+}
+
+.topBarCenter {
+    flex: 1;
+}
+
+.topBarCenter .topBarLinks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.topBarLeft {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.topBarIcon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    background-color: #3A3B3C;
+    height: 40px;
+    width: 200px;
+    border-radius: 30px;
+    margin-left: 10px;
+    padding: 0 10px;
+}
+
+.searchBar input {
+    width: 90%;
+    border-radius: 30px;
+    border: none;
+    border-width: 0;
+    box-shadow: none;
+    margin-left: 5px;
+    background-color: #3A3B3C;
+    color: #B0B3AD;
+    font-size: .8rem;
+}
+
+input:focus{
+    outline: none;
+}
+
+.topBarIconItems{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #E4E6EB;
+    background-color: #3A3B3C;
+    margin: 0 7px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topBarIconItems:hover{
+    background-color: #464748;
+}
+
+.topBarIconItems > svg{
+    font-size: 20px;
+}
+
+.topBarIconBadge{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    width: 15px;
+    height: 15px;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.topBarLinkItems{
+    color: #B0B3AD;
+    cursor: pointer;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topBarLinkItems:hover{
+    background-color: #3A3B3C;
+    border-radius: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
