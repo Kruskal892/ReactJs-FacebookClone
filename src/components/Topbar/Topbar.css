@@ -15,17 +15,19 @@
 }
 
 .topBarCenter {
-    flex: 6;
+    flex: 5;
 }
 
 .topBarCenter .topBarLinks {
     display: flex;
-    justify-content: space-around;
+    margin: auto;
+    width: 60%;
+    justify-content: space-between;
 }
 
 .topBarLeft {
     display: flex;
-    flex: 3;
+    flex: 2;
     align-items: center;
 }
 
@@ -48,7 +50,7 @@
     align-items: center;
     background-color: #3A3B3C;
     height: 40px;
-    width: 200px;
+    width: 240px;
     border-radius: 30px;
     margin-left: 10px;
     padding: 0 10px;
@@ -110,14 +112,18 @@ input:focus{
     color: #B0B3AD;
     cursor: pointer;
     height: 60px;
-    width: 100%;
+    width: 125px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .topBarLinkItems:hover{
     background-color: #3A3B3C;
     border-radius: 10px;
+}
+.topBarLinkItems> svg{
+    height: 30px;
+    width: 30px;
 }
 
 .avatar {

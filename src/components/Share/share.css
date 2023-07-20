@@ -1,0 +1,65 @@
+
+.share{
+    width: 60%;
+    height: 8rem;
+    border-radius: 10px;
+    background-color: #242526;
+    padding: 12px 16px 0px 16px;
+}
+.shareContainer{
+    height: 100%;
+}
+.shareTop{
+    display: flex;
+    align-items: center;
+}
+.userProfileImg{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.userPostInput{
+    border: none;
+    width: 90%;
+    height: 45px;
+    border-radius: 50px;
+    background-color: #3A3B3C;
+    font-size: 15px;
+    padding-left: 10px;
+    color: #fff;
+}
+.userPostInput:focus{
+    outline: none;
+}
+.shareLine{
+    margin: 10px 0;
+
+}
+.shareBot{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+.shareOptions{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    justify-content: center;
+    height: 90%;
+}
+.shareOptions:hover{
+    background-color: #3A3B3C;
+    border-radius: 10px;
+}
+.shareOptionImg{
+    margin-right: 10px;
+}
+.shareOptionTitle{
+    color: rgb(176,179,184);
+    font-weight: 500;
+}

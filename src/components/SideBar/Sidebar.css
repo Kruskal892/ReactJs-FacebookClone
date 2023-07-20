@@ -4,21 +4,42 @@ li{
 ul{
     padding: 10px;
 }
+hr{
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin: 15px 0;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: #18191A;
+}
+::-webkit-slider-thumb{
+    background-color: rgb(179, 179, 179);
+}
+
 .sidebar{
-    flex: 3;
+    flex: 2;
     height: calc(100vh - 3.74rem);
     background: #18191A;
     justify-content: center;
+    overflow-y: scroll;
+    padding: 0;
 }
 
 .sidebarWrapper{
-    /* padding: 20px; */
+    width: 85%;
 }
 .sidebarAvatar{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
+}
+.sideListItemsContainer{
+    padding: 0;
 }
 
 .sidebarList{
@@ -33,7 +54,7 @@ ul{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 50px;
+    height: 52px;
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
@@ -45,8 +66,13 @@ ul{
 }
 
 .sidebarListItems > svg {
-    height: 2rem;
-    width: 2rem;
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.sidebarListItems > img{
+    height: 1.8rem;
+    width: 1.8rem;
 }
 
 .sidebarListItems:hover{
@@ -58,3 +84,39 @@ ul{
     padding-left: 15px;
 }
 
+.sideBarBtn{
+    width: 150px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.sidebarFriendList{
+    padding: 0 0 0 10px;
+    margin: 0;
+    list-style: none;
+}
+.sidebarFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 52px;
+}
+
+.sideBarFriendImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.sideBarFriendName{
+    color: #fff;
+}
+
+.sidebarFriend:hover{
+    background-color: #464748;
+    cursor: pointer;
+    border-radius: 5px;
+}
