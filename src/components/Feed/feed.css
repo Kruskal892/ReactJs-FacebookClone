@@ -2,7 +2,7 @@
     flex: 5;
     width: 100%;
     background-color: #18191A;
-    
+    overflow-y: hidden;
 }
 .feedContainer{
     margin: auto;
