@@ -1,3 +1,114 @@
-.rightbar{
+.rightbar {
     flex: 2;
+    overflow-y: scroll;
+}
+
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: #18191A;
+}
+::-webkit-slider-thumb{
+    background-color: rgb(179, 179, 179);
+}
+
+.rightbarContainer {
+    width: 85%;
+    margin: 0 0 0 auto;
+}
+
+.sponsorContainer {
+    margin-top: 20px;
+}
+
+.sponsorTitle {
+    color: #B0B3B8;
+}
+
+.sponsorWrapper {
+    display: flex;
+    margin: 15px 20px 0 0;
+    color: #DFE1E6;
+    align-items: center;
+}
+
+.sponsorImg {
+    width: 131px;
+    height: 131px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.sponsorDecs {
+    font-weight: bold;
+}
+
+.birthdayContainer {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.birthdayWrapper {
+    display: flex;
+    align-items: center;
+    margin: 15px 20px 0 0;
+}
+
+.birthdayTitle {
+    color: #B0B3B8;
+}
+
+.birthdayIcon {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.birthdayDecs {
+    color: #DFE1E6;
+}
+
+.contactTitle {
+    color: #B0B3B8;
+}
+
+.contactPersonContainer {
+    display: flex;
+    align-items: center;
+    color: #DFE1E6;
+    margin: 10px 0;
+    position: relative;
+
+}
+
+.contactList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+.contactImg {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.contactOnline {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: limegreen;
+    position: absolute;
+    right: 313px;
+    top: 30px;
+}
+
+.contactName {
+    font-weight: 500;
 }
