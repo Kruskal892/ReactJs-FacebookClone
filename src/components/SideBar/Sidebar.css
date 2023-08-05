@@ -27,6 +27,8 @@ hr{
     justify-content: center;
     overflow-y: scroll;
     padding: 0;
+    position: sticky;
+    top: 3.74rem;
 }
 
 .sidebarWrapper{

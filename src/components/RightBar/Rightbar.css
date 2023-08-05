@@ -90,25 +90,3 @@
     list-style: none;
 
 }
-
-.contactImg {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 15px;
-}
-
-.contactOnline {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: limegreen;
-    position: absolute;
-    right: 313px;
-    top: 30px;
-}
-
-.contactName {
-    font-weight: 500;
-}

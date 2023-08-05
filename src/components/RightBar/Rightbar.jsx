@@ -1,4 +1,6 @@
 import "./Rightbar.css"
+import { Users } from "../../dummyData"
+import Contact from "../Contact/Contact"
 export default function Rightbar() {
   return (
     <div className="rightbar">
@@ -33,69 +35,9 @@ export default function Rightbar() {
         <div className="contactContainer">
           <b className="contactTitle">Contacts</b>
           <ul className="contactList">
-            <li className="contactPerson">
-              <div className="contactPersonContainer">
-                <img src="/assets/person/3.jpeg" alt="" className="contactImg" />
-                <span className="contactOnline"></span>
-                <span className="contactName">Test Person</span>
-              </div>
-            </li>
-
-            <li className="contactPerson">
-              <div className="contactPersonContainer">
-                <img src="/assets/person/3.jpeg" alt="" className="contactImg" />
-                <span className="contactOnline"></span>
-                <span className="contactName">Test Person</span>
-              </div>
-            </li>
-
-            <li className="contactPerson">
-              <div className="contactPersonContainer">
-                <img src="/assets/person/3.jpeg" alt="" className="contactImg" />
-                <span className="contactOnline"></span>
-                <span className="contactName">Test Person</span>
-              </div>
-            </li>
-
-            <li className="contactPerson">
-              <div className="contactPersonContainer">
-                <img src="/assets/person/3.jpeg" alt="" className="contactImg" />
-                <span className="contactOnline"></span>
-                <span className="contactName">Test Person</span>
-              </div>
-            </li>
-
-            <li className="contactPerson">
-              <div className="contactPersonContainer">
-                <img src="/assets/person/3.jpeg" alt="" className="contactImg" />
-                <span className="contactOnline"></span>
-                <span className="contactName">Test Person</span>
-              </div>
-            </li>
-
-            <li className="contactPerson">
-              <div className="contactPersonContainer">
-                <img src="/assets/person/3.jpeg" alt="" className="contactImg" />
-                <span className="contactOnline"></span>
-                <span className="contactName">Test Person</span>
-              </div>
-            </li>
-
-            <li className="contactPerson">
-              <div className="contactPersonContainer">
-                <img src="/assets/person/3.jpeg" alt="" className="contactImg" />
-                <span className="contactOnline"></span>
-                <span className="contactName">Test Person</span>
-              </div>
-            </li>
-
-            <li className="contactPerson">
-              <div className="contactPersonContainer">
-                <img src="/assets/person/3.jpeg" alt="" className="contactImg" />
-                <span className="contactOnline"></span>
-                <span className="contactName">Test Person</span>
-              </div>
-            </li>
+          {Users.map(user => (
+            <Contact key={user.id} users={user}/>
+          ))}
           </ul>
         </div>
 

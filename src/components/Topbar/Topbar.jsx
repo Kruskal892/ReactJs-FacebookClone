@@ -20,7 +20,7 @@ export default function Topbar() {
 
         <div className="searchBar">
           <SearchIcon />
-          <input placeholder="Find on FaceBook" className="searchInput" />
+          <input placeholder="Find on Facebook" className="searchInput" />
         </div>
       </div>
 

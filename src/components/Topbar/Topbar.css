@@ -8,6 +8,7 @@
     top: 0;
     padding: 0 10px;
     overflow-x: hidden;
+    z-index: 9999;
 }
 
 .topBarRight {
@@ -56,7 +57,7 @@
     padding: 0 10px;
 }
 
-.searchBar input {
+.searchInput {
     width: 90%;
     border-radius: 30px;
     border: none;
@@ -64,8 +65,11 @@
     box-shadow: none;
     margin-left: 5px;
     background-color: #3A3B3C;
-    color: #B0B3AD;
-    font-size: .8rem;
+    font-size: .9rem;
+}
+
+::placeholder{
+    color: #b5b5b5;
 }
 
 input:focus{
