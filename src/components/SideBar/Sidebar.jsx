@@ -1,4 +1,6 @@
 import { blue } from "@mui/material/colors";
+import Shortcut from "../Shortcut/Shortcut";
+import {Shortcuts} from '../../dummyData'
 import "./Sidebar.css"
 
 import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
@@ -36,60 +38,15 @@ export default function Sidebar() {
             <OndemandVideoRoundedIcon sx={{ color: blue[ 500 ] }} />
             <span className="listItemText">Watch</span>
           </li>
-          </ul>
           <button className="sideBarBtn">Show More</button>
           <hr className="sideBarLine"/>
+          </ul>
 
           <ul className="sidebarFriendList">
-            <li className="sidebarFriend">
-              <img src="/assets/person/1.jpeg" alt="" className="sideBarFriendImg" />
-              <span className="sideBarFriendName">Jane Doe</span>
-            </li>
-
-            <li className="sidebarFriend">
-              <img src="/assets/person/2.jpeg" alt="" className="sideBarFriendImg" />
-              <span className="sideBarFriendName">Jane Doe</span>
-            </li>
-
-            <li className="sidebarFriend">
-              <img src="/assets/person/3.jpeg" alt="" className="sideBarFriendImg" />
-              <span className="sideBarFriendName">Jane Doe</span>
-            </li>
-
-            <li className="sidebarFriend">
-              <img src="/assets/person/4.jpeg" alt="" className="sideBarFriendImg" />
-              <span className="sideBarFriendName">Jane Doe</span>
-            </li>
-
-            <li className="sidebarFriend">
-              <img src="/assets/person/5.jpeg" alt="" className="sideBarFriendImg" />
-              <span className="sideBarFriendName">Jane Doe</span>
-            </li>
-
-            <li className="sidebarFriend">
-              <img src="/assets/person/6.jpeg" alt="" className="sideBarFriendImg" />
-              <span className="sideBarFriendName">Jane Doe</span>
-            </li>
-
-            <li className="sidebarFriend">
-              <img src="/assets/person/7.jpeg" alt="" className="sideBarFriendImg" />
-              <span className="sideBarFriendName">Jane Doe</span>
-            </li>
-
-            <li className="sidebarFriend">
-              <img src="/assets/person/8.jpeg" alt="" className="sideBarFriendImg" />
-              <span className="sideBarFriendName">Jane Doe</span>
-            </li>
-
-            <li className="sidebarFriend">
-              <img src="/assets/person/9.jpeg" alt="" className="sideBarFriendImg" />
-              <span className="sideBarFriendName">Jane Doe</span>
-            </li>
-
-            <li className="sidebarFriend">
-              <img src="/assets/person/10.jpeg" alt="" className="sideBarFriendImg" />
-              <span className="sideBarFriendName">Jane Doe</span>
-            </li>
+          <div className="shortcutTitle">Your shortcuts</div>
+          {Shortcuts.map(shortcut => (
+            <Shortcut key={shortcut.id} shortcut={shortcut}/>
+          ))}
           </ul>
 
         </ul>

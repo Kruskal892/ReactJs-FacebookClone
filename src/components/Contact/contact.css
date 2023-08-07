@@ -1,4 +1,11 @@
-
+.contactPersonContainer {
+    display: flex;
+    align-items: center;
+    color: #DFE1E6;
+    position: relative;
+    padding: 10px 0;
+    margin: 0;
+}
 .contactImg {
     height: 40px;
     width: 40px;
@@ -13,10 +20,17 @@
     border-radius: 50%;
     background-color: limegreen;
     position: absolute;
-    right: 313px;
+    left: 30px;
     top: 30px;
 }
 
 .contactName {
     font-weight: 500;
+}
+
+.contactPersonContainer:hover{
+    background-color: #464748;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 0;
 }

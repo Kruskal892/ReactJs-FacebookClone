@@ -137,3 +137,31 @@ export const Users = [
       comment: 12,
     },
   ];
+
+  export const Shortcuts = [
+    {
+      id:1,
+      groupPicture: "assets/shortcut/shitland.jpg",
+      groupName: "Shitland Official",
+    },
+    {
+      id:2,
+      groupPicture: "assets/shortcut/leubao.jpg",
+      groupName: "Lều Báo 2VN",
+    },
+    {
+      id:3,
+      groupPicture: "assets/shortcut/gam.jpg",
+      groupName: "GAM Esport LOL",
+    },
+    {
+      id:4,
+      groupPicture: "assets/shortcut/ct2vn.jpg",
+      groupName: "Chiến Thần 2VN",
+    },
+    {
+      id:5,
+      groupPicture: "assets/shortcut/hts.jpg",
+      groupName: "Hanu Technical Support",
+    }
+  ];

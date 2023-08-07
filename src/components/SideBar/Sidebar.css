@@ -2,7 +2,7 @@ li{
     list-style: none;
 }
 ul{
-    padding: 10px;
+    padding: 0px;
 }
 hr{
     border: none;
@@ -95,30 +95,14 @@ hr{
 }
 
 .sidebarFriendList{
-    padding: 0 0 0 10px;
+    /* padding-left: 10px; */
     margin: 0;
     list-style: none;
 }
-.sidebarFriend{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    height: 52px;
+.shortcutTitle{
+    font-size: 18px;
+    font-weight: 400;
+    color: #B0B3B8;
+    padding-bottom: 5px;
 }
 
-.sideBarFriendImg{
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
-}
-.sideBarFriendName{
-    color: #fff;
-}
-
-.sidebarFriend:hover{
-    background-color: #464748;
-    cursor: pointer;
-    border-radius: 5px;
-}
